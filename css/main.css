@@ -1,0 +1,93 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+.divider {
+  margin: 10px 0;
+}
+
+nav {
+  padding-right: 15px;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+  position:relative;
+  opacity:0.80;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../media/images/parallax1.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../media/images/parallax2.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('../media/images/parallax3.jpg');
+  min-height:400px;
+}
+
+.pimg4{
+  background-image:url('../media/images/parallax4.jpg');
+  min-height:400px;
+}
+
+.ptext{
+  position:absolute;
+  top:30%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  /* background-color:#111; */
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+.prix {
+  padding: 15px 0;
+  font-size: 2rem;
+}
+
+.promo i {
+  margin: 15px 0;
+  color: #666;
+  font-size: 6rem;
+  display: block;
+}
+
+.promo img {
+  margin: 15px 0 0 0;
+  height: 6rem;
+}
+
+.tarif {
+  padding: 8px 8px 0 8px;
+}
