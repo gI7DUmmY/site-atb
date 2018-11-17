@@ -1,74 +1,97 @@
-body, html{
-  height:100%;
-  margin:0;
-  font-size:16px;
-  font-family:"Lato", sans-serif;
-  font-weight:400;
-  line-height:1.8em;
-  color:#666;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+#adresse {
+  padding-left: 1.2em;
 }
 
 .divider {
   margin: 10px 0;
 }
 
+form button {
+  margin-right: 20px;
+}
+
+li i {
+  margin-right: 5px;
+}
+
+#map {
+  height: 500px;
+}
+
 nav {
   padding-right: 15px;
 }
 
-.pimg1, .pimg2, .pimg3, .pimg4{
-  position:relative;
-  opacity:0.80;
-  background-position:center;
-  background-size:cover;
-  background-repeat:no-repeat;
+.pimg {
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   /*
     fixed = parallax
     scroll = normal
   */
-  background-attachment:fixed;
+  background-attachment: fixed;
 }
 
-.pimg1{
-  background-image:url('../media/images/parallax1.jpg');
-  min-height:100%;
+.pimg1 {
+  background-image: url("../media/images/parallax1.jpg");
+  min-height: 100%;
 }
 
-.pimg2{
-  background-image:url('../media/images/parallax2.jpg');
-  min-height:400px;
+.pimg2 {
+  background-image: url("../media/images/parallax2.jpg");
+  min-height: 400px;
 }
 
-.pimg3{
-  background-image:url('../media/images/parallax3.jpg');
-  min-height:400px;
+.pimg3 {
+  background-image: url("../media/images/parallax3.jpg");
+  min-height: 400px;
 }
 
-.pimg4{
-  background-image:url('../media/images/parallax4.jpg');
-  min-height:400px;
+.pimg4 {
+  background-image: url("../media/images/parallax4.jpg");
+  min-height: 400px;
 }
 
-.ptext{
-  position:absolute;
-  top:30%;
-  width:100%;
-  text-align:center;
-  color:#000;
-  font-size:27px;
-  letter-spacing:8px;
-  text-transform:uppercase;
+.pimg5 {
+  background-image: url("../media/images/parallax5.jpg");
+  min-height: 400px;
 }
 
-.ptext .border{
+.ptext {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border {
   /* background-color:#111; */
-  color:#fff;
-  padding:20px;
+  color: #fff;
+  padding: 20px;
+  text-shadow: 2px 2px 0 black;
 }
 
-.ptext .border.trans{
-  background-color:transparent;
+.ptext .border.trans {
+  background-color: transparent;
 }
 
 .prix {
@@ -88,6 +111,28 @@ nav {
   height: 6rem;
 }
 
+section h2 {
+  text-transform: uppercase;
+}
+
+.section h6 {
+  padding: 0 10%;
+}
+
 .tarif {
   padding: 8px 8px 0 8px;
+}
+
+#twitter {
+  padding-right: 1.1em;
+}
+
+#youtube {
+  padding-right: 0.45em;
+}
+
+@media screen and (max-width: 425px) {
+  #logo {
+    height: 56px;
+  }
 }
