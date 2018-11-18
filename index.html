@@ -1,239 +1,436 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="media/images/cropped-ATB-white-32x32.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <title>Association Toulousaine de Babyfoot</title>
-</head>
-<body>
-  <div class="navbar-fixed">
-    <nav class="nav-wrapper deep-purple lighten-2">
-      <a href="#" class="brand-logo center">
-        <img
-          class="white"
-          id="logo"
-          src="media/images/cropped-ATB-white.png"
-          alt="Logo ATB" height="64px">
-      </a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#">Le Club</a></li>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Règles Officielles</a></li>
-        <li><a href="#">Nous Contacter</a></li>
-      </ul>
-    </nav>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="media/images/cropped-ATB-white-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <title>Association Toulousaine de Babyfoot</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar-fixed">
+      <nav class="nav-wrapper deep-purple lighten-2">
+        <a
+          href="#"
+          data-target="slide-out"
+          class="sidenav-trigger show-on-med-and-down"
+          ><i class="material-icons">menu</i></a
+        >
+        <a href="#" class="brand-logo center">
+          <img
+            class="white"
+            id="logo"
+            src="media/images/cropped-ATB-white.png"
+            alt="Logo ATB"
+            height="64px"
+          />
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">Accueil</a></li>
+          <li>
+            <!-- Dropdown Trigger -->
+            <a class="dropdown-trigger" href="#" data-target="dropdown1"
+              >Le Club</a
+            >
 
-  <div class="pimg pimg1">
-    <div class="ptext">
-      <div class="border flow-text">
-        Association Toulousaine de Babyfoot
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content deep-purple lighten-2">
+              <li><a href="#!">Le projet Educatif</a></li>
+              <li><a href="#!">Animations</a></li>
+              <li><a href="#!">Statuts</a></li>
+              <li><a href="#!">Charte</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Règles Officielles</a></li>
+          <li><a href="#">Nous Contacter</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- sidenav -->
+    <ul id="slide-out" class="sidenav">
+      <li><a href="#" class="btn-flat">Accueil</a></li>
+      <li>
+        <ul>
+          <li><a href="#" class="btn-flat">Le Club</a></li>
+          <li>
+            <a href="#!"
+              ><i class="material-icons">subdirectory_arrow_right</i>Le projet
+              Educatif</a
+            >
+          </li>
+          <li>
+            <a href="#!"
+              ><i class="material-icons">subdirectory_arrow_right</i
+              >Animations</a
+            >
+          </li>
+          <li>
+            <a href="#!"
+              ><i class="material-icons">subdirectory_arrow_right</i>Statuts</a
+            >
+          </li>
+          <li>
+            <a href="#!"
+              ><i class="material-icons">subdirectory_arrow_right</i>Charte</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li><a href="#" class="btn-flat">Règles Officielles</a></li>
+      <li><a href="#" class="btn-flat">Nous Contacter</a></li>
+    </ul>
+
+    <div class="pimg pimg1">
+      <div class="ptext">
+        <div class="border flow-text">Association Toulousaine de Babyfoot</div>
       </div>
     </div>
-  </div>
-  <!-- Objectifs -->
-  <section class="section white">
-    <div class="row">
-      <div class="center">
-        <h2>L'OBJECTIF DE L'ATB</h2>
-        <p>est de développer le football de table</p>
-      </div>
-      <div class="col s12 m3">
-        <div class="center promo">
-          <i class="material-icons orange-text">school</i>
-          <h6>L'APPRENTISSAGE</h6>
-          <p>Le football de table est un sport avec ses règles, ses techniques. Comme tout sport, l’apprentissage se fait à travers un programme évolutif qui permet de progresser, quelque soit son niveau.</p>
+    <!-- Objectifs -->
+    <section class="section white">
+      <div class="row">
+        <div class="center">
+          <h2>L'OBJECTIF DE L'ATB</h2>
+          <p>est de développer le football de table</p>
+        </div>
+        <div class="col s12 m3">
+          <div class="center promo">
+            <i class="material-icons purple-text">school</i>
+            <h6>L'APPRENTISSAGE</h6>
+            <p>
+              Le football de table est un sport avec ses règles, ses techniques.
+              Comme tout sport, l’apprentissage se fait à travers un programme
+              évolutif qui permet de progresser, quelque soit son niveau.
+            </p>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="center promo">
+            <i class="material-icons green-text">supervisor_account</i>
+            <h6>LES ENTRAINEMENTS</h6>
+            <p>
+              Les séances d’entraînement sont dédiées au jeu et à l’application
+              des concepts vus pendant les cours.
+            </p>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="center promo">
+            <i class="material-icons blue-text">event</i>
+            <h6>DES ANIMATIONS</h6>
+            <p>
+              L’ATB propose aussi des prestations autour du babyfoot pour animer
+              vos événements qu’ils soient privés ou publics.
+            </p>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="center promo">
+            <img src="media/images/ffft_logo.png" alt="logo_ffft" />
+            <h6>LA FFFT</h6>
+            <p>
+              L’ATB est un club officiel classé de la Fédération Française de
+              Football de Table
+            </p>
+          </div>
         </div>
       </div>
-      <div class="col s12 m3">
-        <div class="center promo">
-          <i class="material-icons green-text">supervisor_account</i>
-          <h6>LES ENTRAINEMENTS</h6>
-          <p>Les séances d’entraînement sont dédiées au jeu et à l’application des concepts vus pendant les cours.</p>
-        </div>
-      </div>
-      <div class="col s12 m3">
-        <div class="center promo">
-          <i class="material-icons blue-text">event</i>
-          <h6>DES ANIMATIONS</h6>
-          <p>L’ATB propose aussi des prestations autour du babyfoot pour animer vos événements qu’ils soient privés ou publics.</p>
-        </div>
-      </div>
-      <div class="col s12 m3">
-        <div class="center promo">
-          <img src="media/images/ffft_logo.png" alt="logo_ffft">
-          <h6>LA FFFT</h6>
-          <p>L’ATB est un club officiel classé de la Fédération Française de Football de Table</p>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <div class="pimg pimg2">
       <div class="ptext">
-        <span class="border trans">
-          HORAIRES DES ENTRAINEMENTS
-        </span>
+        <span class="border trans"> HORAIRES DES ENTRAINEMENTS </span>
       </div>
     </div>
+    <!-- Horaires -->
+    <section class="section deep-purple lighten-2">
+      <div class="row">
+        <div class="center">
+          <div class="col s6">
+            <div class="center promo">
+              <i class="material-icons white-text">place</i>
+              <p class="white-text">
+                Les entraînements se font en partenariat avec<br />le 147<br />12
+                rue des Amidonniers<br />31000 Toulouse
+              </p>
+            </div>
+          </div>
+          <div class="col s6">
+            <div class="center promo">
+              <i class="material-icons white-text">access_time</i>
+              <ul class="white-text">
+                <li>LUNDI de 18h à 21h</li>
+                <li>MERCREDI de 18h à 21h</li>
+                <li>VENDREDI de 18h à 21h</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- google map -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.0335053718886!2d1.4274073157599616!3d43.60584397912309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb695df641cf%3A0x60673e7c685ab9e8!2sLe+147!5e0!3m2!1sfr!2sfr!4v1542556484340"
+      frameborder="0"
+      style="border:0"
+      allowfullscreen
+    ></iframe>
 
-  <!-- Horaires -->
-  <section class="section deep-purple lighten-2">
-    <div class="row">
-      <div class="center">
-        <div class="col s6">
-          <div class="center promo">
-            <i class="material-icons white-text">place</i>
-            <p class="white-text">Les entraînements se font en partenariat avec<br>le 147<br>12 rue des Amidonniers<br>31000 Toulouse</p>
-          </div>
-        </div>
-        <div class="col s6">
-          <div class="center promo">
-            <i class="material-icons white-text">access_time</i>
-            <ul class="white-text">
-              <li>lundi de 18h à 21h</li>
-              <li>mercredi de 18h à 21h</li>
-              <li>vendredi de 18h à 21h</li>
-            </ul>
-          </div>
-        </div>
+    <div class="pimg pimg3">
+      <div class="ptext">
+        <span class="border trans"> NOTRE CHAINE YOUTUBE </span>
       </div>
     </div>
-  </section>
+    <!-- Chaine Youtube -->
+    <section class="section white">
+      <div class="row">
+        <h6 class="center" id="titre-vid">NOS DERNIERES VIDEOS</h6>
+        <div class="col s12 m4">
+          <a href="#" id="link1" target="_blank">
+            <img alt="aperçu 1" src="#" id="image1" class="responsive-img" />
+            <div id="titre1"></div>
+          </a>
+        </div>
+        <div class="col s12 m4">
+          <a href="#" id="link2" target="_blank">
+            <img alt="aperçu 2" src="#" id="image2" class="responsive-img" />
+            <div id="titre2"></div>
+          </a>
+        </div>
+        <div class="col s12 m4">
+          <a href="#" id="link3" target="_blank">
+            <img alt="aperçu 3" src="#" id="image3" class="responsive-img" />
+            <div id="titre3"></div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-  <div class="pimg pimg3">
-    <div class="ptext">
-      <span class="border trans">
-        NOTRE CHAINE YOUTUBE
-      </span>
+    <div class="pimg pimg4">
+      <div class="ptext">
+        <span class="border trans"> TARIFS DES LICENCES </span>
+      </div>
     </div>
-  </div>
-  <!-- Chaine Youtube -->
-  <section class="section white">
-    <h6>nos dernières vidéos</h6>
-  </section>
+    <!-- Tarifs -->
+    <section class="section deep-purple lighten-2 white-text">
+      <h6 class="center">
+        En plus des prix indiqués pour l'adhésion, il sera demandé à chacun de
+        prendre un abonnement mensuel au 147
+      </h6>
+      <div class="row">
+        <div class="col s12 m3">
+          <div class="card small green darken-3 tarif">
+            <div class="card-title center">
+              Sénior/Vétéran<br />Licence Loisir
+              <div class="divider"></div>
+              <div class="prix">20€/an</div>
+              <div class="divider"></div>
+            </div>
+            <div class="center">
+              entraînements et tournois de petite taille (CNFT3-4)
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card small green darken-3 tarif">
+            <div class="card-title center">
+              Junior<br />Licence Loisir
+              <div class="divider"></div>
+              <div class="prix">10€/an</div>
+              <div class="divider"></div>
+            </div>
+            <div class="center">
+              entraînements et tournois de petite taille (CNFT3-4)
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card small blue darken-2 tarif">
+            <div class="card-title center">
+              Sénior/Vétéran<br />Licence Compétition
+              <div class="divider"></div>
+              <div class="prix">40€/an</div>
+              <div class="divider"></div>
+            </div>
+            <div class="center">entraînements et toutes les compétitions</div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card small blue darken-2 tarif">
+            <div class="card-title center">
+              Junior<br />Licence Compétition
+              <div class="divider"></div>
+              <div class="prix">20€/an</div>
+              <div class="divider"></div>
+            </div>
+            <div class="center">entraînements et toutes les compétitions</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="pimg pimg4">
-    <div class="ptext">
-      <span class="border trans">
-        TARIFS DES LICENCES
-      </span>
+    <div class="pimg pimg5">
+      <div class="ptext"><span class="border trans"> news </span></div>
     </div>
-  </div>
-  <!-- Tarifs -->
-  <section class="section deep-purple lighten-2 white-text">
-    <h6 class="center">En plus des prix indiqués pour l'adhésion, il sera demandé à chacun de prendre un abonnement mensuel au 147</h6>
-    <div class="row">
-      <div class="col s12 m3">
-        <div class="card small green darken-3 tarif">
-          <div class="card-title center">
-            Sénior/Vétéran<br>Licence Loisir
-            <div class="divider"></div>
-            <div class="prix">20€/an</div>
-            <div class="divider"></div>
-          </div>
-          <div class="center">
-            entraînements et tournois de petite taille (CNFT3-4)
-          </div>
+    <!-- News -->
+    <section class="section white">
+      <div class="container center">
+        <div
+          class="fb-page"
+          data-href="https://www.facebook.com/ToulouseBabyfoot"
+          data-tabs="timeline, events"
+          data-small-header="false"
+          data-adapt-container-width="true"
+          data-hide-cover="false"
+          data-show-facepile="true"
+        >
+          <blockquote
+            cite="https://www.facebook.com/ToulouseBabyfoot"
+            class="fb-xfbml-parse-ignore"
+          >
+            <a href="https://www.facebook.com/ToulouseBabyfoot"
+              >Association Toulousaine de BabyFoot</a
+            >
+          </blockquote>
         </div>
       </div>
-      <div class="col s12 m3">
-        <div class="card small green darken-3 tarif">
-          <div class="card-title center">
-            Junior<br>Licence Loisir
-            <div class="divider"></div>
-            <div class="prix">10€/an</div>
-            <div class="divider"></div>
-          </div>
-          <div class="center">
-            entraînements et tournois de petite taille (CNFT3-4)
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m3">
-        <div class="card small blue darken-2 tarif">
-          <div class="card-title center">
-            Sénior/Vétéran<br>Licence Compétition
-            <div class="divider"></div>
-            <div class="prix">40€/an</div>
-            <div class="divider"></div>
-          </div>
-          <div class="center">
-            entraînements et toutes les compétitions
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m3">
-        <div class="card small blue darken-2 tarif">
-          <div class="card-title center">
-            Junior<br>Licence Compétition
-            <div class="divider"></div>
-            <div class="prix">20€/an</div>
-            <div class="divider"></div>
-          </div>
-          <div class="center">
-            entraînements et toutes les compétitions
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="pimg pimg5">
-    <div class="ptext">
-      <span class="border trans">
-        news
-      </span>
-    </div>
-  </div>
-  <!-- News -->
-  <section class="section white">
-    <h6>les dernières nouvelles</h6>
-  </section>
-  <!-- Contact Form -->
-  <section class="section deep-purple lighten-2">
-    <h2 class="center white-text">contactez nous</h2>
-    <div class="container">
-      <form>
-        <input type="text" class="input-field white-text" placeholder="Nom Prénom">
-        <input type="text" class="input-field white-text" placeholder="Adresse email">
-        <input type="text" class="input-field white-text" placeholder="Sujet">
-        <textarea name="message" id="msg" class="materialize-textarea white-text" placeholder="Votre message"></textarea>
-        <button class="btn waves-effect waves-light red" type="reset" name="action">Effacer
-          <i class="material-icons right">clear</i>
-        </button>
-        <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
-          <i class="material-icons right">send</i>
-        </button>
-      </form>
-    </div>
-  </section>
-  <footer class="page-footer white black-text">
-    <div class="container row">
-      <div class="col s6 left-align">
-        <ul>
-          <li>
-            <div><i class="tiny material-icons">place</i>LE 147</div>
-            <div id="adresse">12 rue des Amidonniers<br>31000 Toulouse</div>
-          </li>
-          <li><i class="tiny material-icons">email</i><a href="mailto:contact@babyfoot-toulouse.fr?subject=Formulaire%20de%20contact%20ATB">contact@babyfoot-toulouse.fr</a></li>
-          <li><i class="tiny material-icons">phone</i><a href="tel:0033 6 78 15 51 77">06 78 15 51 77</a></li>
-        </ul>
+    <!-- Contact Form -->
+    <section class="section deep-purple lighten-2">
+      <h2 class="center white-text">contactez nous</h2>
+      <div class="container">
+        <form>
+          <input
+            type="text"
+            class="input-field white-text"
+            placeholder="Nom Prénom"
+          />
+          <input
+            type="text"
+            class="input-field white-text"
+            placeholder="Adresse email"
+          />
+          <input
+            type="text"
+            class="input-field white-text"
+            placeholder="Sujet"
+          />
+          <textarea
+            name="message"
+            id="msg"
+            class="materialize-textarea white-text"
+            placeholder="Votre message"
+          ></textarea>
+          <button
+            class="btn waves-effect waves-light red"
+            type="reset"
+            name="action"
+          >
+            Effacer <i class="material-icons right">clear</i>
+          </button>
+          <button
+            class="btn waves-effect waves-light"
+            type="submit"
+            name="action"
+          >
+            Envoyer <i class="material-icons right">send</i>
+          </button>
+        </form>
       </div>
-      <div class="col s6 right-align">
-        <ul>
-          <li><i class="fab fa-facebook-square"></i><a href="https://www.facebook.com/ToulouseBabyfoot">Facebook</a></li>
-          <li id="twitter"><i class="fab fa-twitter-square"></i><a href="https://twitter.com/ATBabyfoot">Twitter</a></li>
-          <li id="youtube"><i class="fab fa-youtube"></i><a href="http://www.youtube.com/c/ASSOCIATIONTOULOUSAINEDEBABYFOOT">Youtube</a></li>
-        </ul>
+    </section>
+
+    <footer class="page-footer white black-text">
+      <div class="container row">
+        <div class="col s6 left-align">
+          <ul>
+            <li>
+              <a href="https://goo.gl/maps/Tm3PXNsRiFF2" target="_blank">
+                <div>
+                  <i class="tiny material-icons black-text">place</i>LE 147
+                </div>
+                <div id="adresse">
+                  12 rue des Amidonniers<br />31000 Toulouse
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:contact@babyfoot-toulouse.fr?subject=Formulaire%20de%20contact%20ATB"
+              >
+                <i class="tiny material-icons black-text">email</i
+                >contact@babyfoot-toulouse.fr
+              </a>
+            </li>
+            <li>
+              <a href="tel:0033 6 78 15 51 77"
+                ><i class="tiny material-icons black-text">phone</i>06 78 15 51
+                77</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col s6 right-align">
+          <ul>
+            <li>
+              <i class="fab fa-facebook-square"></i
+              ><a href="https://www.facebook.com/ToulouseBabyfoot">Facebook</a>
+            </li>
+            <li id="twitter">
+              <i class="fab fa-twitter-square"></i
+              ><!-- <a href="https://twitter.com/ATBabyfoot">Twitter</a>
+              -->Twitter
+            </li>
+            <li id="youtube">
+              <i class="fab fa-youtube"></i
+              ><a
+                href="http://www.youtube.com/c/ASSOCIATIONTOULOUSAINEDEBABYFOOT"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
+    </footer>
+
+    <!-- plugin page facebook -->
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src =
+          "https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.2";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

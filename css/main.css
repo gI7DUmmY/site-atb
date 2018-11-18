@@ -17,8 +17,27 @@ html {
   margin: 10px 0;
 }
 
+#dropdown1 li a {
+  color: white;
+}
+
+.dropdown-content {
+  margin-top: 64px;
+  top: 0px !important;
+}
+
+.fb-page {
+  width: 500px;
+}
+
 form button {
   margin-right: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  margin-bottom: -10px;
 }
 
 li i {
@@ -69,7 +88,7 @@ nav {
 
 .pimg5 {
   background-image: url("../media/images/parallax5.jpg");
-  min-height: 400px;
+  min-height: 250px;
 }
 
 .ptext {
@@ -102,13 +121,13 @@ nav {
 .promo i {
   margin: 15px 0;
   color: #666;
-  font-size: 6rem;
+  font-size: 4rem;
   display: block;
 }
 
 .promo img {
   margin: 15px 0 0 0;
-  height: 6rem;
+  height: 4rem;
 }
 
 section h2 {
@@ -119,8 +138,16 @@ section h2 {
   padding: 0 10%;
 }
 
+.sidenav .material-icons {
+  margin-right: 5px !important;
+}
+
 .tarif {
   padding: 8px 8px 0 8px;
+}
+
+#titre-vid {
+  padding-bottom: 1em;
 }
 
 #twitter {
