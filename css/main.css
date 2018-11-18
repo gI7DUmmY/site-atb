@@ -26,8 +26,8 @@ html {
   top: 0px !important;
 }
 
-.fb-page {
-  width: 500px;
+#footer-row {
+  margin-bottom: 0 !important;
 }
 
 form button {
@@ -50,6 +50,10 @@ li i {
 
 nav {
   padding-right: 15px;
+}
+
+#news {
+  padding: 0;
 }
 
 .pimg {
