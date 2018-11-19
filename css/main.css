@@ -13,12 +13,21 @@ html {
   padding-left: 1.2em;
 }
 
+.contact-btn {
+  margin-top: 1em;
+}
+
 .divider {
   margin: 10px 0;
 }
 
 #dropdown1 li a {
   color: white;
+}
+
+.dropdown-content li:hover,
+.dropdown-content li.active {
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .dropdown-content {
@@ -58,7 +67,7 @@ nav {
 
 .pimg {
   position: relative;
-  opacity: 0.8;
+  opacity: 0.9;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -150,16 +159,20 @@ section h2 {
   padding: 8px 8px 0 8px;
 }
 
+.titre {
+  font-family: "droid_serifbold";
+}
+
 #titre-vid {
   padding-bottom: 1em;
 }
 
 #twitter {
-  padding-right: 1.1em;
+  padding-right: 1.5em;
 }
 
 #youtube {
-  padding-right: 0.45em;
+  padding-right: 0.7em;
 }
 
 @media screen and (max-width: 425px) {

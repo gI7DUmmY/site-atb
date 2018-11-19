@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link rel="stylesheet" href="css/droid-serif.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -69,10 +70,10 @@
 
     <!-- sidenav -->
     <ul id="slide-out" class="sidenav">
-      <li><a href="#" class="btn-flat">Accueil</a></li>
+      <li><a href="#">Accueil</a></li>
       <li>
         <ul>
-          <li><a href="#" class="btn-flat">Le Club</a></li>
+          <li><a href="#">Le Club</a></li>
           <li>
             <a href="#!"
               ><i class="material-icons">subdirectory_arrow_right</i>Le projet
@@ -97,26 +98,28 @@
           </li>
         </ul>
       </li>
-      <li><a href="#" class="btn-flat">Règles Officielles</a></li>
-      <li><a href="#" class="btn-flat">Nous Contacter</a></li>
+      <li><a href="#">Règles Officielles</a></li>
+      <li><a href="#">Nous Contacter</a></li>
     </ul>
 
     <div class="pimg pimg1">
       <div class="ptext">
-        <div class="border flow-text">Association Toulousaine de Babyfoot</div>
+        <div class="border flow-text titre">
+          Association Toulousaine de Babyfoot
+        </div>
       </div>
     </div>
     <!-- Objectifs -->
     <section class="section grey lighten-3">
       <div class="row">
         <div class="center">
-          <h2>L'OBJECTIF DE L'ATB</h2>
-          <p>est de développer le football de table</p>
+          <h2 class="titre">L'OBJECTIF DE L'ATB</h2>
+          <p class="titre">est de développer le football de table</p>
         </div>
         <div class="col s12 m3">
           <div class="center promo">
             <i class="material-icons purple-text">school</i>
-            <h6>L'APPRENTISSAGE</h6>
+            <h6 class="titre">L'APPRENTISSAGE</h6>
             <p>
               Le football de table est un sport avec ses règles, ses techniques.
               Comme tout sport, l’apprentissage se fait à travers un programme
@@ -127,7 +130,7 @@
         <div class="col s12 m3">
           <div class="center promo">
             <i class="material-icons green-text">supervisor_account</i>
-            <h6>LES ENTRAINEMENTS</h6>
+            <h6 class="titre">LES ENTRAINEMENTS</h6>
             <p>
               Les séances d’entraînement sont dédiées au jeu et à l’application
               des concepts vus pendant les cours.
@@ -137,7 +140,7 @@
         <div class="col s12 m3">
           <div class="center promo">
             <i class="material-icons blue-text">event</i>
-            <h6>DES ANIMATIONS</h6>
+            <h6 class="titre">DES ANIMATIONS</h6>
             <p>
               L’ATB propose aussi des prestations autour du babyfoot pour animer
               vos événements qu’ils soient privés ou publics.
@@ -146,8 +149,12 @@
         </div>
         <div class="col s12 m3">
           <div class="center promo">
-            <img src="media/images/ffft_logo.png" alt="logo_ffft" class="circle" />
-            <h6>LA FFFT</h6>
+            <img
+              src="media/images/ffft_logo.png"
+              alt="logo_ffft"
+              class="circle"
+            />
+            <h6 class="titre">LA FFFT</h6>
             <p>
               L’ATB est un club officiel classé de la Fédération Française de
               Football de Table
@@ -159,7 +166,7 @@
 
     <div class="pimg pimg2">
       <div class="ptext">
-        <span class="border trans"> HORAIRES DES ENTRAINEMENTS </span>
+        <span class="border trans titre">HORAIRES DES ENTRAINEMENTS</span>
       </div>
     </div>
     <!-- Horaires -->
@@ -198,13 +205,13 @@
 
     <div class="pimg pimg3">
       <div class="ptext">
-        <span class="border trans"> NOTRE CHAINE YOUTUBE </span>
+        <span class="border trans titre">NOTRE CHAINE YOUTUBE</span>
       </div>
     </div>
     <!-- Chaine Youtube -->
     <section class="section grey lighten-3">
       <div class="row">
-        <h6 class="center" id="titre-vid">NOS DERNIERES VIDEOS</h6>
+        <h6 class="center titre" id="titre-vid">NOS DERNIERES VIDEOS</h6>
         <div class="col s12 m4">
           <a href="#" id="link1" target="_blank">
             <img alt="aperçu 1" src="#" id="image1" class="responsive-img" />
@@ -228,7 +235,7 @@
 
     <div class="pimg pimg4">
       <div class="ptext">
-        <span class="border trans"> TARIFS DES LICENCES </span>
+        <span class="border trans titre"> TARIFS DES LICENCES </span>
       </div>
     </div>
     <!-- Tarifs -->
@@ -240,7 +247,7 @@
       <div class="row">
         <div class="col s12 m3">
           <div class="card small green darken-3 tarif">
-            <div class="card-title center">
+            <div class="card-title center titre">
               Sénior/Vétéran<br />Licence Loisir
               <div class="divider"></div>
               <div class="prix">20€/an</div>
@@ -253,7 +260,7 @@
         </div>
         <div class="col s12 m3">
           <div class="card small green darken-3 tarif">
-            <div class="card-title center">
+            <div class="card-title center titre">
               Junior<br />Licence Loisir
               <div class="divider"></div>
               <div class="prix">10€/an</div>
@@ -266,7 +273,7 @@
         </div>
         <div class="col s12 m3">
           <div class="card small blue darken-2 tarif">
-            <div class="card-title center">
+            <div class="card-title center titre">
               Sénior/Vétéran<br />Licence Compétition
               <div class="divider"></div>
               <div class="prix">40€/an</div>
@@ -277,7 +284,7 @@
         </div>
         <div class="col s12 m3">
           <div class="card small blue darken-2 tarif">
-            <div class="card-title center">
+            <div class="card-title center titre">
               Junior<br />Licence Compétition
               <div class="divider"></div>
               <div class="prix">20€/an</div>
@@ -290,7 +297,7 @@
     </section>
 
     <div class="pimg pimg5">
-      <div class="ptext"><span class="border trans"> news </span></div>
+      <div class="ptext"><span class="border trans titre"> news </span></div>
     </div>
     <!-- News -->
     <section class="section grey lighten-3" id="news">
@@ -319,7 +326,7 @@
 
     <!-- Contact Form -->
     <section class="section deep-purple lighten-2">
-      <h2 class="center white-text">contactez nous</h2>
+      <h2 class="center white-text titre">contactez nous</h2>
       <div class="container">
         <form>
           <input
@@ -344,14 +351,14 @@
             placeholder="Votre message"
           ></textarea>
           <button
-            class="btn waves-effect waves-light red"
+            class="btn-small waves-effect waves-light red contact-btn"
             type="reset"
             name="action"
           >
             Effacer <i class="material-icons right">clear</i>
           </button>
           <button
-            class="btn waves-effect waves-light"
+            class="btn-small waves-effect waves-light contact-btn"
             type="submit"
             name="action"
           >
@@ -432,6 +439,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+    <!-- rss parser -->
     <script>
       feednami.setPublicApiKey(
         "0df5553fbaac60aabc07b7b53ee12e5159458881c85e33785a0fe306b5c97f42"
