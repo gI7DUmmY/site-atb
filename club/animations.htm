@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="../media/images/cropped-ATB-white-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/droid-serif.css" />
+    <link rel="stylesheet" href="../css/page.css" />
+    <title>ATB - Animations</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar-fixed">
+      <nav class="nav-wrapper deep-purple lighten-2">
+        <a
+          href="#"
+          data-target="slide-out"
+          class="sidenav-trigger show-on-med-and-down"
+          ><i class="material-icons">menu</i></a
+        >
+        <a href="#" class="brand-logo center">
+          <img
+            class="white"
+            id="logo"
+            src="../media/images/cropped-ATB-white.png"
+            alt="Logo ATB"
+            height="64px"
+          />
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="../index.html">Accueil</a></li>
+          <li>
+            <!-- Dropdown Trigger -->
+            <a class="dropdown-trigger" href="#" data-target="dropdown1"
+              >Le Club</a
+            >
+
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content deep-purple lighten-2">
+              <li><a href="projet.htm">Le projet éducatif</a></li>
+              <li><a href="animations.htm">Animations</a></li>
+              <li><a href="statuts.htm">Statuts</a></li>
+              <li><a href="charte.htm">Charte</a></li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="https://gi7dummy.github.io/itsf_rules/rules/"
+              target="_blank"
+              >Règles Officielles</a
+            >
+          </li>
+          <li><a href="../index.html#contact-form">Nous Contacter</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- sidenav -->
+    <ul id="slide-out" class="sidenav">
+      <li><a href="../index.html">Accueil</a></li>
+      <li>
+        <ul>
+          <li><a href="#">Le Club</a></li>
+          <li>
+            <a href="projet.htm"
+              ><i class="material-icons">subdirectory_arrow_right</i>Le projet
+              éducatif</a
+            >
+          </li>
+          <li>
+            <a href="animations.htm"
+              ><i class="material-icons">subdirectory_arrow_right</i
+              >Animations</a
+            >
+          </li>
+          <li>
+            <a href="statuts.htm"
+              ><i class="material-icons">subdirectory_arrow_right</i>Statuts</a
+            >
+          </li>
+          <li>
+            <a href="charte.htm"
+              ><i class="material-icons">subdirectory_arrow_right</i>Charte</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://gi7dummy.github.io/itsf_rules/rules/" target="_blank"
+          >Règles Officielles</a
+        >
+      </li>
+      <li><a href="../index.html#contact-form">Nous Contacter</a></li>
+    </ul>
+
+    <main class="section">
+      <div class="container">
+        <h3 class="titre">Animations</h3>
+        <p>
+          Depuis longtemps, nous sommes habitués à faire des animations autour
+          du babyfoot pour des soirées d’entreprise, des journées découverte
+          (mairie, TFC…. ) <br />Utilisez notre
+          <a href="../index.html#contact-form">formulaire de contact</a> ou par
+          téléphone au <a href="tel:0033 6 78 15 51 77">06 78 15 51 77</a>.
+        </p>
+      </div>
+    </main>
+
+    <footer class="page-footer grey lighten-3 black-text">
+      <div class="container row" id="footer-row">
+        <div class="col s6 left-align">
+          <ul>
+            <li>
+              <a href="https://goo.gl/maps/Tm3PXNsRiFF2" target="_blank">
+                <div>
+                  <i class="tiny material-icons black-text">place</i>LE 147
+                </div>
+                <div id="adresse">
+                  12 rue des Amidonniers<br />31000 Toulouse
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:contact@babyfoot-toulouse.fr?subject=Formulaire%20de%20contact%20ATB"
+              >
+                <i class="tiny material-icons black-text">email</i
+                >contact@babyfoot-toulouse.fr
+              </a>
+            </li>
+            <li>
+              <a href="tel:0033 6 78 15 51 77"
+                ><i class="tiny material-icons black-text">phone</i>06 78 15 51
+                77</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col s6 right-align">
+          <ul>
+            <li>
+              <i class="fab fa-facebook-square"></i
+              ><a href="https://www.facebook.com/ToulouseBabyfoot">Facebook</a>
+            </li>
+            <li id="twitter">
+              <i class="fab fa-twitter-square"></i
+              ><!-- <a href="https://twitter.com/ATBabyfoot">Twitter</a>
+              -->Twitter
+            </li>
+            <li id="youtube">
+              <i class="fab fa-youtube"></i
+              ><a
+                href="http://www.youtube.com/c/ASSOCIATIONTOULOUSAINEDEBABYFOOT"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      // init sidenav
+      document.addEventListener("DOMContentLoaded", function() {
+        var elem1 = document.querySelectorAll(".sidenav");
+        var instance1 = M.Sidenav.init(elem1);
+      });
+
+      // init dropdown
+      document.addEventListener("DOMContentLoaded", function() {
+        var elem2 = document.querySelectorAll(".dropdown-trigger");
+        var instance2 = M.Dropdown.init(elem2);
+      });
+    </script>
+  </body>
+</html>

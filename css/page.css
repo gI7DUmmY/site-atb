@@ -1,0 +1,86 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  /* color: #666; */
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#adresse {
+  padding-left: 1.2em;
+}
+
+.carre li {
+  list-style-type: square !important;
+  margin-left: 2.5em;
+}
+
+#dropdown1 li a {
+  color: white;
+}
+
+.dropdown-content li:hover,
+.dropdown-content li.active {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.dropdown-content {
+  margin-top: 64px;
+  top: 0px !important;
+}
+
+#footer-row {
+  margin-bottom: 0 !important;
+}
+
+h3 {
+  text-decoration: underline red solid;
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+li {
+  text-align: justify;
+}
+
+li i {
+  margin-right: 5px;
+}
+
+main {
+  flex: 1 0 auto;
+  margin-top: 50px;
+}
+
+p {
+  text-align: justify;
+}
+
+.titre {
+  font-family: "droid_serifbold";
+  text-transform: uppercase;
+}
+
+#twitter {
+  padding-right: 1.5em;
+}
+
+#youtube {
+  padding-right: 0.7em;
+}
