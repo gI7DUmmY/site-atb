@@ -55,6 +55,10 @@ h5 {
   font-size: 18px;
 }
 
+footer li {
+  text-align: inherit;
+}
+
 li {
   text-align: justify;
 }
