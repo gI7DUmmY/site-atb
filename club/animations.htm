@@ -123,6 +123,23 @@
           téléphone au <a href="tel:0033 6 78 15 51 77">06 78 15 51 77</a>.
         </p>
       </div>
+      <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#one!"
+          ><img src="../media/photos/photo1.jpg"
+        /></a>
+        <a class="carousel-item" href="#two!"
+          ><img src="../media/photos/photo2.jpg"
+        /></a>
+        <a class="carousel-item" href="#three!"
+          ><img src="../media/photos/photo3.jpg"
+        /></a>
+        <a class="carousel-item" href="#four!"
+          ><img src="../media/photos/photo4.jpg"
+        /></a>
+        <a class="carousel-item" href="#five!"
+          ><img src="../media/photos/photo5.jpg"
+        /></a>
+      </div>
     </main>
 
     <footer class="page-footer grey lighten-3 black-text">
@@ -190,6 +207,16 @@
       document.addEventListener("DOMContentLoaded", function() {
         var elem2 = document.querySelectorAll(".dropdown-trigger");
         var instance2 = M.Dropdown.init(elem2);
+      });
+
+      // init carousel
+      document.addEventListener("DOMContentLoaded", function() {
+        var elems = document.querySelectorAll(".carousel");
+        var instances = M.Carousel.init(elems, {
+          duration: 100,
+          fullWidth: true,
+          indicators: true
+        });
       });
     </script>
   </body>
