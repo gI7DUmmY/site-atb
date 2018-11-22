@@ -23,7 +23,7 @@
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="../css/glider.css">
+    <link rel="stylesheet" type="text/css" href="../css/glider.css" />
     <link rel="stylesheet" href="../css/droid-serif.css" />
     <link rel="stylesheet" href="../css/page.css" />
     <title>ATB - Animations</title>
@@ -40,9 +40,9 @@
         >
         <a href="#" class="brand-logo center">
           <img
-            class="white"
+            class="white circle"
             id="logo"
-            src="../media/images/cropped-ATB-white.png"
+            src="../media/images/logo_atb.png"
             alt="Logo ATB"
             height="64px"
           />
@@ -78,30 +78,40 @@
     <!-- sidenav -->
     <ul id="slide-out" class="sidenav">
       <li><a href="../index.html">Accueil</a></li>
-      <li>
-        <ul>
-          <li><a href="#">Le Club</a></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
           <li>
-            <a href="projet.htm"
-              ><i class="material-icons">subdirectory_arrow_right</i>Le projet
-              éducatif</a
+            <a class="collapsible-header"
+              >Le Club<i class="material-icons">arrow_drop_down</i></a
             >
-          </li>
-          <li>
-            <a href="animations.htm"
-              ><i class="material-icons">subdirectory_arrow_right</i
-              >Animations</a
-            >
-          </li>
-          <li>
-            <a href="statuts.htm"
-              ><i class="material-icons">subdirectory_arrow_right</i>Statuts</a
-            >
-          </li>
-          <li>
-            <a href="charte.htm"
-              ><i class="material-icons">subdirectory_arrow_right</i>Charte</a
-            >
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <a href="projet.htm"
+                    ><i class="material-icons">subdirectory_arrow_right</i>Le
+                    projet éducatif</a
+                  >
+                </li>
+                <li>
+                  <a href="animations.htm"
+                    ><i class="material-icons">subdirectory_arrow_right</i
+                    >Animations</a
+                  >
+                </li>
+                <li>
+                  <a href="statuts.htm"
+                    ><i class="material-icons">subdirectory_arrow_right</i
+                    >Statuts</a
+                  >
+                </li>
+                <li>
+                  <a href="charte.htm"
+                    ><i class="material-icons">subdirectory_arrow_right</i
+                    >Charte</a
+                  >
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </li>
@@ -126,13 +136,15 @@
       </div>
       <div id="carousel" class="glider-contain">
         <div class="glider">
-          <div><img src="../media/photos/photo1.jpg"/></div>
-          <div><img src="../media/photos/photo2.jpg"/></div>
-          <div><img src="../media/photos/photo3.jpg"/></div>
-          <div><img src="../media/photos/photo4.jpg"/></div>
+          <div><img src="../media/photos/photo1.jpg" /></div>
+          <div><img src="../media/photos/photo2.jpg" /></div>
+          <div><img src="../media/photos/photo3.jpg" /></div>
+          <div><img src="../media/photos/photo4.jpg" /></div>
         </div>
-      
-        <button role="button" aria-label="Previous" class="glider-prev">«</button>
+
+        <button role="button" aria-label="Previous" class="glider-prev">
+          «
+        </button>
         <button role="button" aria-label="Next" class="glider-next">»</button>
         <div role="tablist" class="dots"></div>
       </div>
@@ -200,20 +212,26 @@
         var instance1 = M.Sidenav.init(elem1);
       });
 
+      // init collapsible sidenav
+      document.addEventListener("DOMContentLoaded", function() {
+        var elem2 = document.querySelectorAll(".collapsible");
+        var instance2 = M.Collapsible.init(elem2);
+      });
+
       // init dropdown
       document.addEventListener("DOMContentLoaded", function() {
-        var elem2 = document.querySelectorAll(".dropdown-trigger");
-        var instance2 = M.Dropdown.init(elem2);
+        var elem3 = document.querySelectorAll(".dropdown-trigger");
+        var instance3 = M.Dropdown.init(elem3);
       });
 
       // init carousel
-      new Glider(document.querySelector('.glider'), {
+      new Glider(document.querySelector(".glider"), {
         slidesToShow: 1,
-        dots: '.dots',
+        dots: ".dots",
         draggable: true,
         arrows: {
-          prev: '.glider-prev',
-          next: '.glider-next'
+          prev: ".glider-prev",
+          next: ".glider-next"
         }
       });
     </script>

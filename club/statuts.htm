@@ -39,9 +39,9 @@
         >
         <a href="#" class="brand-logo center">
           <img
-            class="white"
+            class="white circle"
             id="logo"
-            src="../media/images/cropped-ATB-white.png"
+            src="../media/images/logo_atb.png"
             alt="Logo ATB"
             height="64px"
           />
@@ -77,33 +77,43 @@
     <!-- sidenav -->
     <ul id="slide-out" class="sidenav">
       <li><a href="../index.html">Accueil</a></li>
-      <li>
-        <ul>
-          <li><a href="#">Le Club</a></li>
-          <li>
-            <a href="projet.htm"
-              ><i class="material-icons">subdirectory_arrow_right</i>Le projet
-              éducatif</a
-            >
-          </li>
-          <li>
-            <a href="animations.htm"
-              ><i class="material-icons">subdirectory_arrow_right</i
-              >Animations</a
-            >
-          </li>
-          <li>
-            <a href="statuts.htm"
-              ><i class="material-icons">subdirectory_arrow_right</i>Statuts</a
-            >
-          </li>
-          <li>
-            <a href="charte.htm"
-              ><i class="material-icons">subdirectory_arrow_right</i>Charte</a
-            >
-          </li>
-        </ul>
-      </li>
+      <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header"
+                >Le Club<i class="material-icons">arrow_drop_down</i></a
+              >
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="projet.htm"
+                      ><i class="material-icons">subdirectory_arrow_right</i>Le
+                      projet éducatif</a
+                    >
+                  </li>
+                  <li>
+                    <a href="animations.htm"
+                      ><i class="material-icons">subdirectory_arrow_right</i
+                      >Animations</a
+                    >
+                  </li>
+                  <li>
+                    <a href="statuts.htm"
+                      ><i class="material-icons">subdirectory_arrow_right</i
+                      >Statuts</a
+                    >
+                  </li>
+                  <li>
+                    <a href="charte.htm"
+                      ><i class="material-icons">subdirectory_arrow_right</i
+                      >Charte</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
       <li>
         <a href="https://gi7dummy.github.io/itsf_rules/rules/" target="_blank"
           >Règles Officielles</a
@@ -408,10 +418,16 @@
         var instance1 = M.Sidenav.init(elem1);
       });
 
+      // init collapsible sidenav
+      document.addEventListener("DOMContentLoaded", function() {
+        var elem2 = document.querySelectorAll(".collapsible");
+        var instance2 = M.Collapsible.init(elem2);
+      });
+
       // init dropdown
       document.addEventListener("DOMContentLoaded", function() {
-        var elem2 = document.querySelectorAll(".dropdown-trigger");
-        var instance2 = M.Dropdown.init(elem2);
+        var elem3 = document.querySelectorAll(".dropdown-trigger");
+        var instance3 = M.Dropdown.init(elem3);
       });
     </script>
   </body>

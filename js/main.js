@@ -3,9 +3,13 @@ $(document).ready(function() {
   var elem1 = document.querySelectorAll(".sidenav");
   var instance1 = M.Sidenav.init(elem1);
 
+  // init collapsible sidenav
+  var elem2 = document.querySelectorAll('.collapsible');
+  var instance2 = M.Collapsible.init(elem2);
+
   // init dropdown
-  var elem2 = document.querySelectorAll(".dropdown-trigger");
-  var instance2 = M.Dropdown.init(elem2);
+  var elem3 = document.querySelectorAll(".dropdown-trigger");
+  var instance3 = M.Dropdown.init(elem3);
 
   // parsing rss feed
   var url =

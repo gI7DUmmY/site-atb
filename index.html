@@ -39,9 +39,9 @@
         >
         <a href="#" class="brand-logo center">
           <img
-            class="white"
+            class="white circle"
             id="logo"
-            src="media/images/cropped-ATB-white.png"
+            src="media/images/logo_atb.png"
             alt="Logo ATB"
             height="64px"
           />
@@ -62,7 +62,13 @@
               <li><a href="club/charte.htm">Charte</a></li>
             </ul>
           </li>
-          <li><a href="https://gi7dummy.github.io/itsf_rules/rules/" target="_blank">Règles Officielles</a></li>
+          <li>
+            <a
+              href="https://gi7dummy.github.io/itsf_rules/rules/"
+              target="_blank"
+              >Règles Officielles</a
+            >
+          </li>
           <li><a href="#contact-form">Nous Contacter</a></li>
         </ul>
       </nav>
@@ -71,30 +77,40 @@
     <!-- sidenav -->
     <ul id="slide-out" class="sidenav">
       <li><a href="#">Accueil</a></li>
-      <li>
-        <ul>
-          <li><a href="#">Le Club</a></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
           <li>
-            <a href="club/projet.htm"
-              ><i class="material-icons">subdirectory_arrow_right</i>Le projet
-              éducatif</a
+            <a class="collapsible-header"
+              >Le Club<i class="material-icons">arrow_drop_down</i></a
             >
-          </li>
-          <li>
-            <a href="club/animations.htm"
-              ><i class="material-icons">subdirectory_arrow_right</i
-              >Animations</a
-            >
-          </li>
-          <li>
-            <a href="club/statuts.htm"
-              ><i class="material-icons">subdirectory_arrow_right</i>Statuts</a
-            >
-          </li>
-          <li>
-            <a href="club/charte.htm"
-              ><i class="material-icons">subdirectory_arrow_right</i>Charte</a
-            >
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <a href="club/projet.htm"
+                    ><i class="material-icons">subdirectory_arrow_right</i>Le
+                    projet éducatif</a
+                  >
+                </li>
+                <li>
+                  <a href="club/animations.htm"
+                    ><i class="material-icons">subdirectory_arrow_right</i
+                    >Animations</a
+                  >
+                </li>
+                <li>
+                  <a href="club/statuts.htm"
+                    ><i class="material-icons">subdirectory_arrow_right</i
+                    >Statuts</a
+                  >
+                </li>
+                <li>
+                  <a href="club/charte.htm"
+                    ><i class="material-icons">subdirectory_arrow_right</i
+                    >Charte</a
+                  >
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </li>
@@ -181,8 +197,8 @@
             <div class="center promo">
               <i class="material-icons white-text">place</i>
               <p class="white-text">
-                Les entraînements se font en partenariat avec<br /><b>le 147</b><br />12
-                rue des Amidonniers<br />31000 Toulouse
+                Les entraînements se font en partenariat avec<br /><b>le 147</b
+                ><br />12 rue des Amidonniers<br />31000 Toulouse
               </p>
             </div>
           </div>
@@ -215,7 +231,9 @@
     <!-- Chaine Youtube -->
     <section class="section grey lighten-3">
       <div class="row">
-        <h6 class="center titre" id="titre-vid">NOS DERNI&Egrave;RES VID&Eacute;OS</h6>
+        <h6 class="center titre" id="titre-vid">
+          NOS DERNI&Egrave;RES VID&Eacute;OS
+        </h6>
         <div class="col s12 m4">
           <a href="#" id="link1" target="_blank">
             <img alt="aperçu 1" src="#" id="image1" class="responsive-img" />
