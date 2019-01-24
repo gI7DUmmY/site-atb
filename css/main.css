@@ -129,6 +129,7 @@ nav {
 .prix {
   padding: 15px 0;
   font-size: 2rem;
+  text-shadow: 1px 1px 2px black;
 }
 
 .promo i {
