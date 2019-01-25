@@ -160,6 +160,10 @@ section h2 {
   padding: 8px 8px 0 8px;
 }
 
+.thumbnail {
+  width: 100%;
+}
+
 .titre {
   font-family: "droid_serifbold";
 }
