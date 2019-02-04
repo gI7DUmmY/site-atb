@@ -23,15 +23,15 @@ $(document).ready(function() {
       // console.log(entries);
       // console.log(entries[0].image.url);
       $("#titre1").text(entries[0].title);
-      $("#image1").attr({ src: entries[0].image.url });
+      $("#image1").attr({ src: entries[0].image.url.replace('hqdefault', 'maxresdefault') });
       $("#link1").attr({ href: entries[0].link });
 
       $("#titre2").text(entries[1].title);
-      $("#image2").attr({ src: entries[1].image.url });
+      $("#image2").attr({ src: entries[1].image.url.replace('hqdefault', 'maxresdefault') });
       $("#link2").attr({ href: entries[1].link });
 
       $("#titre3").text(entries[2].title);
-      $("#image3").attr({ src: entries[2].image.url });
+      $("#image3").attr({ src: entries[2].image.url.replace('hqdefault', 'maxresdefault') });
       $("#link3").attr({ href: entries[2].link });
     }
   });
