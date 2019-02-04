@@ -350,19 +350,22 @@
     <section id="contact-form" class="section deep-purple lighten-2">
       <h2 class="center white-text titre">contactez nous</h2>
       <div class="container">
-        <form>
+        <form id="contact">
           <input
             type="text"
+            name="nom"
             class="input-field white-text"
             placeholder="Nom Prénom"
           />
           <input
             type="text"
+            name="email"
             class="input-field white-text"
             placeholder="Adresse email"
           />
           <input
             type="text"
+            name="sujet"
             class="input-field white-text"
             placeholder="Sujet"
           />
@@ -373,6 +376,7 @@
             placeholder="Votre message"
           ></textarea>
           <button
+            id="reset"
             class="btn-small waves-effect waves-light red contact-btn"
             type="reset"
             name="action"
@@ -380,6 +384,7 @@
             Effacer <i class="material-icons right">clear</i>
           </button>
           <button
+            id="send"
             class="btn-small waves-effect waves-light contact-btn"
             type="submit"
             name="action"
@@ -461,6 +466,12 @@
       feednami.setPublicApiKey(
         "0df5553fbaac60aabc07b7b53ee12e5159458881c85e33785a0fe306b5c97f42"
       );
+    </script>
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script>
+       (function(){
+          emailjs.init("user_gAAQ3vFLHMthe4x2ZQyP2");
+       })();
     </script>
     <script src="js/main.js"></script>
   </body>

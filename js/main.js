@@ -4,7 +4,7 @@ $(document).ready(function() {
   var instance1 = M.Sidenav.init(elem1);
 
   // init collapsible sidenav
-  var elem2 = document.querySelectorAll('.collapsible');
+  var elem2 = document.querySelectorAll(".collapsible");
   var instance2 = M.Collapsible.init(elem2);
 
   // init dropdown
@@ -23,16 +23,46 @@ $(document).ready(function() {
       // console.log(entries);
       // console.log(entries[0].image.url);
       $("#titre1").text(entries[0].title);
-      $("#image1").attr({ src: entries[0].image.url.replace('hqdefault', 'maxresdefault') });
+      $("#image1").attr({
+        src: entries[0].image.url.replace("hqdefault", "maxresdefault")
+      });
       $("#link1").attr({ href: entries[0].link });
 
       $("#titre2").text(entries[1].title);
-      $("#image2").attr({ src: entries[1].image.url.replace('hqdefault', 'maxresdefault') });
+      $("#image2").attr({
+        src: entries[1].image.url.replace("hqdefault", "maxresdefault")
+      });
       $("#link2").attr({ href: entries[1].link });
 
       $("#titre3").text(entries[2].title);
-      $("#image3").attr({ src: entries[2].image.url.replace('hqdefault', 'maxresdefault') });
+      $("#image3").attr({
+        src: entries[2].image.url.replace("hqdefault", "maxresdefault")
+      });
       $("#link3").attr({ href: entries[2].link });
     }
+  });
+
+  // EmailJS
+  var myform = $("form#contact");
+  myform.submit(function(event) {
+    event.preventDefault();
+
+    // Change to your service ID, or keep using the default service
+    var service_id = "default_service";
+    var template_id = "contact_site_atb";
+
+    myform.find("button#send").text("Envoi en cours...");
+    emailjs.sendForm(service_id, template_id, myform[0]).then(
+      function() {
+        alert("Sent!");
+        myform.find("button#send").text("Envoyer");
+        $('button#reset').click();
+      },
+      function(err) {
+        alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+        myform.find("button#send").text("Envoyer");
+      }
+    );
+    return false;
   });
 });
