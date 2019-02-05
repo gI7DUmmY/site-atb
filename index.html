@@ -356,28 +356,32 @@
             name="nom"
             class="input-field white-text"
             placeholder="Nom Prénom"
+            required
           />
           <input
-            type="text"
+            type="email"
             name="email"
             class="input-field white-text"
             placeholder="Adresse email"
+            required
           />
           <input
             type="text"
             name="sujet"
             class="input-field white-text"
             placeholder="Sujet"
+            required
           />
           <textarea
             name="message"
             id="msg"
             class="materialize-textarea white-text"
             placeholder="Votre message"
+            required
           ></textarea>
           <button
             id="reset"
-            class="btn-small waves-effect waves-light red contact-btn"
+            class="btn-small waves-effect waves-light red darken-2 contact-btn"
             type="reset"
             name="action"
           >
@@ -385,7 +389,7 @@
           </button>
           <button
             id="send"
-            class="btn-small waves-effect waves-light contact-btn"
+            class="btn-small waves-effect waves-light teal lighten-2 contact-btn"
             type="submit"
             name="action"
           >

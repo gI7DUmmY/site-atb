@@ -15,6 +15,7 @@ html {
 
 .contact-btn {
   margin-top: 1em;
+  box-shadow: none !important;
 }
 
 .divider {

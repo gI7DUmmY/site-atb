@@ -54,12 +54,12 @@ $(document).ready(function() {
     myform.find("button#send").text("Envoi en cours...");
     emailjs.sendForm(service_id, template_id, myform[0]).then(
       function() {
-        alert("Sent!");
+        M.toast({html: 'Email envoyé !', classes: 'rounded'});
         myform.find("button#send").text("Envoyer");
         $('button#reset').click();
       },
       function(err) {
-        alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+        M.toast({html: `L'envoi a échoué :\r\n ${JSON.stringify(err)}`, classes: 'rounded'});
         myform.find("button#send").text("Envoyer");
       }
     );
