@@ -1,25 +1,34 @@
 $(document).ready(function() {
   // init sidenav
-  var elem1 = document.querySelectorAll(".sidenav");
-  var instance1 = M.Sidenav.init(elem1);
+  const elem1 = document.querySelectorAll(".sidenav");
+  const instance1 = M.Sidenav.init(elem1);
 
   // init collapsible sidenav
-  var elem2 = document.querySelectorAll(".collapsible");
-  var instance2 = M.Collapsible.init(elem2);
+  const elem2 = document.querySelectorAll(".collapsible");
+  const instance2 = M.Collapsible.init(elem2);
 
   // init dropdown
-  var elem3 = document.querySelectorAll(".dropdown-trigger");
-  var instance3 = M.Dropdown.init(elem3);
+  const elem3 = document.querySelectorAll(".dropdown-trigger");
+  const instance3 = M.Dropdown.init(elem3);
+
+  // toggle dropdown icon
+  $('#liDropdown').click(() => {
+    if ($('#dropdown').text() == 'arrow_drop_down') {
+      $('#dropdown').text('arrow_drop_up');
+    } else if ($('#dropdown').text() == 'arrow_drop_up') {
+      $('#dropdown').text('arrow_drop_down');
+    }
+  });
 
   // parsing rss feed
-  var url =
+  const url =
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCA9Mku7prq0xSWZ8GuGtf2g";
 
   feednami.load(url, function(result) {
     if (result.error) {
       console.log(result.error);
     } else {
-      var entries = result.feed.entries;
+      const entries = result.feed.entries;
       // console.log(entries);
       // console.log(entries[0].image.url);
       $("#titre1").text(entries[0].title);
@@ -43,13 +52,13 @@ $(document).ready(function() {
   });
 
   // EmailJS
-  var myform = $("form#contact");
+  const myform = $("form#contact");
   myform.submit(function(event) {
     event.preventDefault();
 
     // Change to your service ID, or keep using the default service
-    var service_id = "default_service";
-    var template_id = "contact_site_atb";
+    const service_id = "default_service";
+    const template_id = "contact_site_atb";
 
     myform.find("button#send").text("Envoi en cours...");
     emailjs.sendForm(service_id, template_id, myform[0]).then(

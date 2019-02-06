@@ -79,10 +79,14 @@
       <li><a href="#">Accueil</a></li>
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
-          <li>
-            <a class="collapsible-header"
-              >Le Club<i class="material-icons">arrow_drop_down</i></a
-            >
+          <li id="liDropdown">
+            <a class="collapsible-header">
+              Le Club
+              <i
+                id="dropdown"
+                class="material-icons"
+              >arrow_drop_down</i>
+            </a>
             <div class="collapsible-body">
               <ul>
                 <li>
@@ -471,6 +475,7 @@
         "0df5553fbaac60aabc07b7b53ee12e5159458881c85e33785a0fe306b5c97f42"
       );
     </script>
+    <!-- EmailJS -->
     <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script>
        (function(){
