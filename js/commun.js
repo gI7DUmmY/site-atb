@@ -1,15 +1,16 @@
 $(document).ready(function() {
   // init sidenav
   const elem1 = document.querySelectorAll('.sidenav');
-  const instance1 = M.Sidenav.init(elem1);
+  M.Sidenav.init(elem1);
 
   // init collapsible sidenav
-  const elem2 = document.querySelectorAll('.collapsible');
+  const elem2 = document.querySelector('.collapsible');
   const instance2 = M.Collapsible.init(elem2);
+  instance2.open();
 
   // init dropdown
   const elem3 = document.querySelectorAll('.dropdown-trigger');
-  const instance3 = M.Dropdown.init(elem3);
+  M.Dropdown.init(elem3);
 
   // toggle dropdown icon
   $('#liDropdown').click(() => {
