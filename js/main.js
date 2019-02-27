@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   // parsing rss feed
   const url =
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCA9Mku7prq0xSWZ8GuGtf2g";
@@ -40,11 +39,15 @@ $(document).ready(function() {
     const service_id = "default_service";
     const template_id = "contact_site_atb";
 
+    myform.find("button#send").addClass("disabled");
+    myform.find("button#reset").addClass("disabled");
     myform.find("button#send").text("Envoi en cours...");
     emailjs.sendForm(service_id, template_id, myform[0]).then(
       function() {
         M.toast({html: 'Email envoyé !', classes: 'rounded'});
         myform.find("button#send").text("Envoyer");
+        myform.find("button#send").removeClass("disabled");
+        myform.find("button#reset").removeClass("disabled");
         $('button#reset').click();
       },
       function(err) {
