@@ -80,10 +80,14 @@
       <li><a href="../index.html">Accueil</a></li>
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
-          <li>
-            <a class="collapsible-header"
-              >Le Club<i class="material-icons">arrow_drop_down</i></a
-            >
+          <li id="liDropdown">
+            <a class="collapsible-header">
+              Le Club
+              <i
+                class="material-icons"
+                id="dropdown"
+              >arrow_drop_down</i>
+            </a>
             <div class="collapsible-body">
               <ul>
                 <li>
@@ -199,26 +203,10 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../js/commun.js"></script>
     <script src="../js/glider.js"></script>
     <script>
-      // init sidenav
-      document.addEventListener("DOMContentLoaded", function() {
-        var elem1 = document.querySelectorAll(".sidenav");
-        var instance1 = M.Sidenav.init(elem1);
-      });
-
-      // init collapsible sidenav
-      document.addEventListener("DOMContentLoaded", function() {
-        var elem2 = document.querySelectorAll(".collapsible");
-        var instance2 = M.Collapsible.init(elem2);
-      });
-
-      // init dropdown
-      document.addEventListener("DOMContentLoaded", function() {
-        var elem3 = document.querySelectorAll(".dropdown-trigger");
-        var instance3 = M.Dropdown.init(elem3);
-      });
-
       // init carousel
       new Glider(document.querySelector(".glider"), {
         slidesToShow: 1,
