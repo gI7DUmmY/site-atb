@@ -158,6 +158,10 @@ section h2 {
   margin-right: 5px !important;
 }
 
+.side-link {
+  padding: 0 0 0 1em !important;
+}
+
 .tarif {
   padding: 8px 8px 0 8px;
 }
