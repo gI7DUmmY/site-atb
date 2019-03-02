@@ -15,12 +15,23 @@ body {
   flex-direction: column;
 }
 
+.avatar {
+  height: 100px;
+  width: 100px !important;
+  padding: 5px;
+  margin: 0 auto;
+}
+
 #adresse {
   padding-left: 1.2em;
 }
 
 button.glider-next:focus, button.glider-prev:focus {
   background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.card-content {
+  padding: 12px 0 0 12px !important;
 }
 
 #carousel {
@@ -80,6 +91,30 @@ li i {
 main {
   flex: 1 0 auto;
   margin-top: 50px;
+}
+
+.statut .bureau {
+  font-weight: bolder;
+  color: gold;
+}
+
+.texte-membre {
+  margin: 0;
+}
+
+.texte-membre .arbitre {
+  margin-left: 1em;
+  color: darkgreen;
+}
+
+.texte-membre .niveau {
+  font-weight: bold;
+  color: darkslateblue;
+  margin-left: 1em;
+}
+
+.texte-membre .nom {
+  font-weight: bold;
 }
 
 p {
