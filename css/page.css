@@ -45,6 +45,10 @@ button.glider-next:focus, button.glider-prev:focus {
   margin-left: 2.5em;
 }
 
+.collapsible-header {
+  font-weight: bold;
+}
+
 #dropdown1 li a {
   color: white;
 }
@@ -93,9 +97,34 @@ main {
   margin-top: 50px;
 }
 
+.palmares .award {
+  font-weight: bold;
+}
+
+.palmares .collapsible li {
+  margin-top: 0.5em;
+}
+
+.palmares .collapsible-body ul {
+  list-style-image: url("../media/images/award-solid.svg");
+}
+
+.palmares h2 {
+  margin: 20px 0;
+}
+
+.palmares .team {
+  font-weight: bold;
+}
+
+.palmares .trophy {
+  color: gold;
+  margin-top: 2em;
+}
+
 .statut .bureau {
   font-weight: bolder;
-  color: gold;
+  color: red;
 }
 
 .texte-membre {
@@ -110,6 +139,12 @@ main {
 .texte-membre .niveau {
   font-weight: bold;
   color: darkslateblue;
+  margin-left: 1em;
+}
+
+.texte-membre .trophy {
+  font-weight: bold;
+  color: gold;
   margin-left: 1em;
 }
 

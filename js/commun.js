@@ -4,13 +4,17 @@ $(document).ready(function() {
   M.Sidenav.init(elem1);
 
   // init collapsible sidenav
-  const elem2 = document.querySelector('.collapsible');
+  const elem2 = document.querySelector('.sidenav .collapsible');
   const instance2 = M.Collapsible.init(elem2);
   instance2.open();
 
   // init dropdown
   const elem3 = document.querySelectorAll('.dropdown-trigger');
   M.Dropdown.init(elem3);
+
+  // init collapsible palmares
+  const elem4 = document.querySelector('.palmares .collapsible');
+  M.Collapsible.init(elem4);
 
   // toggle dropdown icon
   $('#liDropdown').click(() => {
