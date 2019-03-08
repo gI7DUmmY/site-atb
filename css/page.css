@@ -101,6 +101,11 @@ main {
   font-weight: bold;
 }
 
+.palmares .collapsible {
+  max-width: 620px;
+  margin: 0 auto 1rem auto;
+}
+
 .palmares .collapsible li {
   margin-top: 0.5em;
 }
@@ -120,6 +125,14 @@ main {
 .palmares .trophy {
   color: gold;
   margin-top: 2em;
+}
+
+.sidenav .material-icons {
+  margin-right: 5px !important;
+}
+
+.side-link {
+  padding: 0 0 0 1em !important;
 }
 
 .statut .bureau {
