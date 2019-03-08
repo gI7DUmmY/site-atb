@@ -132,7 +132,7 @@ main {
 }
 
 .texte-membre .arbitre {
-  margin-left: 1em;
+  font-weight: bold;
   color: darkgreen;
 }
 
