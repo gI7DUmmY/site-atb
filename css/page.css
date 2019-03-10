@@ -97,6 +97,11 @@ main {
   margin-top: 50px;
 }
 
+.membres .card {
+  max-width: 600px;
+  margin: 0.3em auto;
+}
+
 .palmares .award {
   font-weight: bold;
 }
