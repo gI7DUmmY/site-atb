@@ -157,24 +157,21 @@
         <p>
           Depuis longtemps, nous sommes habitués à faire des animations autour
           du babyfoot pour des soirées d’entreprise, des journées découverte
-          (mairie, TFC…. ) <br />Utilisez notre
-          <a href="../index.html#contact-form">formulaire de contact</a> ou par
-          téléphone au <a href="tel:0033 6 78 15 51 77">06 78 15 51 77</a>.
+          (mairie, TFC, bar… ) <br />Utilisez notre
+          <a href="../index.html#contact-form">formulaire de contact</a> ou notre
+          <a href="tel:0033 6 78 15 51 77">
+            <i class="material-icons tiny">phone</i>
+            06 78 15 51 77
+          </a>.
         </p>
       </div>
-      <div id="carousel" class="glider-contain">
-        <div class="glider">
-          <div><img src="../media/photos/animations/photo1.jpg" /></div>
-          <div><img src="../media/photos/animations/photo2.jpg" /></div>
-          <div><img src="../media/photos/animations/photo3.jpg" /></div>
-          <div><img src="../media/photos/animations/photo4.jpg" /></div>
-        </div>
 
-        <button role="button" aria-label="Previous" class="glider-prev">
-          «
-        </button>
-        <button role="button" aria-label="Next" class="glider-next">»</button>
-        <div role="tablist" class="dots"></div>
+      <!-- carousel -->
+      <div class="carousel carousel-slider center">
+        <a class="carousel-item" href="#one!"><img src="../media/photos/animations/photo1.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="../media/photos/animations/photo2.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="../media/photos/animations/photo3.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="../media/photos/animations/photo4.jpg"></a>
       </div>
     </main>
 
@@ -229,18 +226,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="../js/commun.js"></script>
-    <script src="../js/glider.js"></script>
-    <script>
-      // init carousel
-      new Glider(document.querySelector(".glider"), {
-        slidesToShow: 1,
-        dots: ".dots",
-        draggable: true,
-        arrows: {
-          prev: ".glider-prev",
-          next: ".glider-next"
-        }
-      });
-    </script>
   </body>
 </html>

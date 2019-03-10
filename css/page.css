@@ -34,9 +34,9 @@ button.glider-next:focus, button.glider-prev:focus {
   padding: 12px 0 0 12px !important;
 }
 
-#carousel {
+.carousel {
   height: 400px;
-  width: 711px;
+  max-width: 70vw;
   margin: 50px auto;
 }
 
@@ -188,9 +188,9 @@ p {
 }
 
 @media screen and (max-width: 711px) {
-  #carousel {
-    height: auto;
-    width: 260px;
+  .carousel {
+    height: 400px;
+    max-width: 90vw;
   }
 }
 
