@@ -36,13 +36,13 @@ $(document).ready(function() {
     event.preventDefault();
 
     // Change to your service ID, or keep using the default service
-    const service_id = "default_service";
+    const service_id = "ovh_atb";
     const template_id = "contact_site_atb";
 
     myform.find("button#send").addClass("disabled");
     myform.find("button#reset").addClass("disabled");
     myform.find("button#send").text("Envoi en cours...");
-    $('#msg').val(
+    $('#data').val(
       $('#msg').val().replace(/\n/g, "<br />")
     );
 
