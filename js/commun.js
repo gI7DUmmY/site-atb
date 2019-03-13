@@ -24,6 +24,11 @@ $(document).ready(function() {
     duration: 500
   });
 
+  // init smooth-scroll
+  const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000
+  });
+
   // toggle dropdown icon
   $('#liDropdown').click(() => {
     if ($('#dropdown').text() == 'arrow_drop_down') {
