@@ -154,12 +154,16 @@ section h2 {
   padding: 0 10%;
 }
 
-.sidenav .material-icons {
-  margin-right: 5px !important;
-}
-
 .side-link {
   padding: 0 0 0 1em !important;
+}
+
+.sidenav-trigger {
+  cursor: pointer;
+}
+
+.sidenav .material-icons {
+  margin-right: 5px !important;
 }
 
 .tarif {

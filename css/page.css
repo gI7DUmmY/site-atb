@@ -183,6 +183,10 @@ p {
   text-align: justify;
 }
 
+.sidenav-trigger {
+  cursor: pointer;
+}
+
 .titre {
   font-family: "droid_serifbold";
   text-transform: uppercase;
