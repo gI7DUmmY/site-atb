@@ -30,6 +30,11 @@ $(document).ready(function() {
     }
   });
 
+  // init smooth-scroll
+  const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000
+  });
+
   // EmailJS
   const myform = $("form#contact");
   myform.submit(function(event) {
