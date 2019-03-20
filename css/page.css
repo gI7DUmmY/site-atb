@@ -15,15 +15,80 @@ body {
   flex-direction: column;
 }
 
+.animations, .section {
+  padding-bottom: 0 !important;
+  /* margin: 0 !important; */
+}
+
+.animations .container {
+  margin: 0 !important;
+  width: 100%;
+}
+
+.animations .container .titre {
+  margin: 0.3em;
+}
+
+.animations .container p {
+  padding: 0.3em;
+}
+
+.animations .container .slider {
+  height: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.animations .container .slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.animations .container .slider .slide.current {
+  opacity: 1;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+#adresse {
+  padding-left: 1.2em;
+}
+
 .avatar {
   height: 100px;
   width: 100px !important;
   padding: 5px;
   margin: 0 auto;
-}
-
-#adresse {
-  padding-left: 1.2em;
 }
 
 button.glider-next:focus, button.glider-prev:focus {
@@ -32,21 +97,6 @@ button.glider-next:focus, button.glider-prev:focus {
 
 .card-content {
   padding: 12px 0 0 12px !important;
-}
-
-.carousel {
-  height: 400px;
-  max-width: 70vw;
-  margin: 25px auto;
-}
-
-.carousel img {
-  display: block;
-  margin: 0 auto;
-  max-height: 400px;
-  max-width: 70vw;
-  height: auto;
-  width: auto !important;
 }
 
 .carre li {
@@ -70,6 +120,10 @@ button.glider-next:focus, button.glider-prev:focus {
 .dropdown-content {
   margin-top: 64px;
   top: 0px !important;
+}
+
+footer {
+  padding: 0 !important;
 }
 
 #footer-row {
@@ -211,4 +265,27 @@ p {
   #logo {
     height: 56px;
   }
+}
+
+/* Photos Animations */
+
+.slide:first-child {
+  background: url('../media/photos/animations/photo1.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(2) {
+  background: url('../media/photos/animations/photo2.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(3) {
+  background: url('../media/photos/animations/photo3.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(4) {
+  background: url('../media/photos/animations/photo4.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(5) {
+  background: url('../media/photos/animations/photo5.jpg') no-repeat
+    center top/cover;
 }

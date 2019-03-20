@@ -151,7 +151,7 @@
       </li>
     </ul>
 
-    <main class="section">
+    <main class="section animations">
       <div class="container">
         <h3 class="titre">Animations</h3>
         <p>
@@ -164,15 +164,19 @@
             06 60 60 34 18
           </a>.
         </p>
-      </div>
-
-      <!-- carousel -->
-      <div class="carousel carousel-slider center">
-        <a class="carousel-item" href="#one!"><img src="../media/photos/animations/photo1.jpg"></a>
-        <a class="carousel-item" href="#two!"><img src="../media/photos/animations/photo2.jpg"></a>
-        <a class="carousel-item" href="#three!"><img src="../media/photos/animations/photo3.jpg"></a>
-        <a class="carousel-item" href="#four!"><img src="../media/photos/animations/photo4.jpg"></a>
-        <a class="carousel-item" href="#four!"><img src="../media/photos/animations/photo5.jpg"></a>
+        <!-- carousel -->
+        <div class="slider">
+          <div class="slide current"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+        </div>
+        <!-- boutons -->
+        <div class="buttons">
+          <button id="prev"><i class="fas fa-arrow-left"></i></button>
+          <button id="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
       </div>
     </main>
 
@@ -233,5 +237,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="../js/commun.js"></script>
+    <script src="../js/animations.js"></script>
   </body>
 </html>

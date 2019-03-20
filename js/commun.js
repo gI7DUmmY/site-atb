@@ -16,14 +16,6 @@ $(document).ready(function() {
   const elem4 = document.querySelector('.palmares .collapsible');
   M.Collapsible.init(elem4);
 
-  // init animations carousel
-  var elem5 = document.querySelector('.carousel');
-  M.Carousel.init(elem5, {
-    numVisible: 2,
-    indicators: true,
-    duration: 500
-  });
-
   // toggle dropdown icon
   $('#liDropdown').click(() => {
     if ($('#dropdown').text() == 'arrow_drop_down') {
