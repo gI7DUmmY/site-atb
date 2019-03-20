@@ -18,6 +18,21 @@ html {
   box-shadow: none !important;
 }
 
+/* #contact-form {
+  background-image: url(../media/images/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#contact-form h2 {
+  text-shadow: 2px 2px 0 black;
+}
+
+#contact-form ::placeholder {
+  color: white;
+} */
+
 .divider {
   margin: 10px 0;
 }
