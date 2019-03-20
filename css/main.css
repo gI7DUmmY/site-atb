@@ -18,13 +18,6 @@ html {
   box-shadow: none !important;
 }
 
-#contact-form {
-  background-image: url(../media/images/contact-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 #contact-form h2 {
   text-shadow: 2px 2px 0 black;
 }
@@ -118,6 +111,11 @@ nav {
 
 .pimg5 {
   background-image: url("../media/images/parallax5.jpg");
+  min-height: 250px;
+}
+
+.pimg6 {
+  background-image: url("../media/images/contact-bg.jpg");
   min-height: 250px;
 }
 
