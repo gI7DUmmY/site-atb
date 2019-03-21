@@ -90,38 +90,27 @@ nav {
 }
 
 .pimg1 {
-  background: url("../media/images/parallax1.jpg") no-repeat
-  center top/cover;
+  background-image: url("../media/images/parallax1.jpg");
   min-height: 100%;
 }
-
 .pimg2 {
-  background: url("../media/images/parallax2.jpg") no-repeat
-    center top/cover;
+  background-image: url("../media/images/parallax2.jpg");
   min-height: 400px;
 }
-
 .pimg3 {
-  background: url("../media/images/parallax3.jpg") no-repeat
-    center top/cover;
+  background-image: url("../media/images/parallax3.jpg");
   min-height: 400px;
 }
-
 .pimg4 {
-  background: url("../media/images/parallax4.jpg") no-repeat
-    center top/cover;
+  background-image: url("../media/images/parallax4.jpg");
   min-height: 400px;
 }
-
 .pimg5 {
-  background: url("../media/images/parallax5.jpg") no-repeat
-    center top/cover;
+  background-image: url("../media/images/parallax5.jpg");
   min-height: 250px;
 }
-
 .pimg6 {
-  background: url("../media/images/contact-bg.jpg") no-repeat
-  center top/cover;
+  background-image: url("../media/images/contact-bg.jpg");
   min-height: 250px;
 }
 
