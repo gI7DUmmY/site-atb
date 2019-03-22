@@ -44,6 +44,10 @@ html {
   top: 0px !important;
 }
 
+.fb-page, .fb-page span {
+  width: 500px;
+}
+
 #footer-row {
   margin-bottom: 0 !important;
 }
@@ -62,7 +66,7 @@ li i {
   margin-right: 5px;
 }
 
-#map {
+#gmap {
   height: 500px;
 }
 
@@ -198,7 +202,7 @@ section h2 {
   padding-right: 0.7em;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 599px) {
   #logo {
     height: 56px;
   }

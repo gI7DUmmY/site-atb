@@ -252,14 +252,7 @@ p {
   padding-right: 0.7em;
 }
 
-@media screen and (max-width: 711px) {
-  .carousel {
-    height: 400px;
-    max-width: 100vw;
-  }
-}
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 599px) {
   #logo {
     height: 56px;
   }
