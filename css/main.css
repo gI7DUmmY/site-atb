@@ -18,8 +18,9 @@ html {
   box-shadow: none !important;
 }
 
-#contact-form h2 {
+#contact-form h3 {
   text-shadow: 2px 2px 0 black;
+  text-transform: uppercase;
 }
 
 #contact-form ::placeholder {
@@ -77,6 +78,8 @@ nav {
 #news {
   padding: 0;
   height: 500px;
+  background-image: url('../media/images/post_online.png');
+  background-repeat: repeat
 }
 
 .pimg {
@@ -124,7 +127,7 @@ nav {
   width: 100%;
   text-align: center;
   color: #000;
-  font-size: 27px;
+  font-size: 20px;
   letter-spacing: 8px;
   text-transform: uppercase;
 }
@@ -205,5 +208,9 @@ section h2 {
 @media screen and (max-width: 599px) {
   #logo {
     height: 56px;
+  }
+  .fb-page, .fb-page span, .fb-page iframe {
+    width: 100vw !important;
+    margin: 0 auto;
   }
 }

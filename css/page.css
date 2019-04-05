@@ -106,6 +106,10 @@ button.glider-next:focus, button.glider-prev:focus {
   font-weight: bold;
 }
 
+ul.collapsible {
+  margin: 0 auto;
+}
+
 #dropdown1 li a {
   color: white;
 }
@@ -122,6 +126,10 @@ button.glider-next:focus, button.glider-prev:focus {
 
 footer {
   padding: 0 !important;
+}
+
+footer li {
+  text-align: inherit;
 }
 
 #footer-row {
@@ -141,8 +149,10 @@ h5 {
   font-size: 18px;
 }
 
-footer li {
-  text-align: inherit;
+#img-palmares {
+  height: 200px;
+  max-width: 90vw;
+  margin-top: 20px;
 }
 
 li {
@@ -180,8 +190,10 @@ main {
   list-style-image: url("../media/images/award-solid.svg");
 }
 
-.palmares h2 {
+.palmares h3 {
   margin: 20px 0;
+  text-decoration: none;
+  font-size: 2.9rem;
 }
 
 .palmares .team {
