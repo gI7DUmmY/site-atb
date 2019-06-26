@@ -27,6 +27,20 @@ html {
   color: white;
 }
 
+#dkToggle i {
+  margin-left: 20px;
+  margin-top: 13px;
+  cursor: pointer;
+}
+
+.darkmode--activated section.section.deep-purple.darken-2 {
+  isolation: isolate;
+}
+
+.darkmode--activated .grey.lighten-3 a {
+  color: darkgoldenrod;
+}
+
 .divider {
   margin: 10px 0;
 }

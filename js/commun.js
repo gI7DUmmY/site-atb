@@ -24,4 +24,23 @@ $(document).ready(function() {
       $('#dropdown').text('arrow_drop_down');
     }
   });
+
+  // init tooltip
+  const elem5 = document.querySelectorAll('.tooltipped');
+  M.Tooltip.init(elem5, {
+    html: 'Dark Mode',
+    position: 'bottom'
+  });
+
+  // init darkmodeJS
+  const darkmode = new Darkmode();
+
+  $('#dkToggle i').click((e) => {
+    if ( !darkmode.isActivated() ) {
+      e.target.classList.replace('fa-toggle-off', 'fa-toggle-on');
+    } else {
+      e.target.classList.replace('fa-toggle-on', 'fa-toggle-off');
+    };
+    darkmode.toggle();
+  });
 });
