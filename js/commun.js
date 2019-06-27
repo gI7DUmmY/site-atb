@@ -27,6 +27,14 @@ $(document).ready(function() {
 
   // init darkmodeJS
   const darkmode = new Darkmode();
+  // active Dark Mode en fonction de l'heure
+  const hours = new Date().getHours;
+  const isDayTime = hours >= 6 && hours <= 21;
+  if (!isDayTime && !darkmode.isActivated()) {
+    darkmode.toggle()
+  } else {
+    if (isDayTime && darkmode.isActivated()) darkmode.toggle();
+  };
 
   // init tooltip
   const elem5 = document.querySelector('#dkToggle i');
