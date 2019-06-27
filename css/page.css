@@ -106,6 +106,31 @@ button.glider-next:focus, button.glider-prev:focus {
   font-weight: bold;
 }
 
+#dkToggle i {
+  margin-left: 20px;
+  margin-top: 13px;
+  cursor: pointer;
+}
+
+.darkmode--activated .section.membres div.card {
+  background-color: black;
+  color: antiquewhite;
+  border-radius: 2px;
+  border: #a3a3a3 solid 2px;
+}
+
+.darkmode--activated .section.membres div.card span.niveau {
+  color: #ce93d8;
+}
+
+.darkmode--activated .section.membres div.card span.bureau {
+  color: #f48fb1;
+}
+
+.darkmode--activated .section.membres div.card span.arbitre {
+  color: #a5d6a7;
+}
+
 ul.collapsible {
   margin: 0 auto;
 }

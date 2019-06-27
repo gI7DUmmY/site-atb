@@ -25,6 +25,9 @@ $(document).ready(function() {
     }
   });
 
+  // init darkmodeJS
+  const darkmode = new Darkmode();
+
   // init tooltip
   const elem5 = document.querySelector('#dkToggle i');
   M.Tooltip.init(elem5, {
@@ -32,9 +35,12 @@ $(document).ready(function() {
     position: 'bottom'
   });
 
-  // init darkmodeJS
-  const darkmode = new Darkmode();
+  // init etat bouton DarkMode au chargement de la page
+  if ( darkmode.isActivated() ) {
+    if (elem5.classList.contains('fa-toggle-off')) elem5.classList.replace('fa-toggle-off', 'fa-toggle-on');
+  } else if (elem5.classList.contains('fa-toggle-on')) elem5.classList.replace('fa-toggle-on', 'fa-toggle-off');
 
+  // switch Dark Mode
   $('#dkToggle i').click((e) => {
     if ( !darkmode.isActivated() ) {
       e.target.classList.replace('fa-toggle-off', 'fa-toggle-on');
@@ -42,7 +48,6 @@ $(document).ready(function() {
       e.target.classList.replace('fa-toggle-on', 'fa-toggle-off');
     };
     darkmode.toggle();
-    // const elem = document.querySelector('#dkToggle i');
     const tooltip = M.Tooltip.getInstance(elem5);
     tooltip.close();
   });
