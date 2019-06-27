@@ -42,5 +42,7 @@ $(document).ready(function() {
       e.target.classList.replace('fa-toggle-on', 'fa-toggle-off');
     };
     darkmode.toggle();
+    const tooltip = M.Tooltip.getInstance(elem5);
+    tooltip.close();
   });
 });
