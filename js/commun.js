@@ -26,7 +26,7 @@ $(document).ready(function() {
   });
 
   // init tooltip
-  const elem5 = document.querySelectorAll('.tooltipped');
+  const elem5 = document.querySelector('#dkToggle i');
   M.Tooltip.init(elem5, {
     html: 'Dark Mode',
     position: 'bottom'
@@ -42,8 +42,8 @@ $(document).ready(function() {
       e.target.classList.replace('fa-toggle-on', 'fa-toggle-off');
     };
     darkmode.toggle();
-    const elem = document.querySelector('#dkToggle i');
-    const tooltip = M.Tooltip.getInstance(elem);
+    // const elem = document.querySelector('#dkToggle i');
+    const tooltip = M.Tooltip.getInstance(elem5);
     tooltip.close();
   });
 });
