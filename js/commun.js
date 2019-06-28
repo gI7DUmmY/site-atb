@@ -27,14 +27,6 @@ $(document).ready(function() {
 
   // init darkmodeJS
   const darkmode = new Darkmode();
-  // active Dark Mode en fonction de l'heure
-  const hours = new Date().getHours;
-  const isDayTime = hours >= 6 && hours <= 21;
-  if (!isDayTime && !darkmode.isActivated()) {
-    darkmode.toggle()
-  } else {
-    if (isDayTime && darkmode.isActivated()) darkmode.toggle();
-  };
 
   // init tooltip
   const elem5 = document.querySelector('#dkToggle i');
@@ -48,12 +40,26 @@ $(document).ready(function() {
     if (elem5.classList.contains('fa-toggle-off')) elem5.classList.replace('fa-toggle-off', 'fa-toggle-on');
   } else if (elem5.classList.contains('fa-toggle-on')) elem5.classList.replace('fa-toggle-on', 'fa-toggle-off');
 
+  
+  // // active Dark Mode en fonction de l'heure
+  // const hours = new Date().getHours();
+  // const isDayTime = hours >= 6 && hours <= 21;
+  // let userSet = false;
+  // console.log(hours, isDayTime, darkmode.isActivated());
+  // if (!isDayTime && !darkmode.isActivated() && !userSet) {
+  //   darkmode.toggle()
+  // } else {
+  //   if (isDayTime && darkmode.isActivated() && !userSet) darkmode.toggle();
+  // };
+  
   // switch Dark Mode
   $('#dkToggle i').click((e) => {
     if ( !darkmode.isActivated() ) {
       e.target.classList.replace('fa-toggle-off', 'fa-toggle-on');
+      userSet = true;
     } else {
       e.target.classList.replace('fa-toggle-on', 'fa-toggle-off');
+      userSet = true;
     };
     darkmode.toggle();
     const tooltip = M.Tooltip.getInstance(elem5);
