@@ -97,6 +97,19 @@ button.glider-next:focus, button.glider-prev:focus {
   padding: 12px 0 0 12px !important;
 }
 
+.carousel.carousel-slider {
+  height: 20em !important;
+  margin-top: 4em;
+}
+
+.carousel.carousel-slider li.indicator-item {
+  background-color: lightgray;
+}
+
+.carousel.carousel-slider li.indicator-item.active {
+  background-color: black;
+}
+
 .carre li {
   list-style-type: square !important;
   margin-left: 2.5em;
@@ -112,22 +125,30 @@ button.glider-next:focus, button.glider-prev:focus {
   cursor: pointer;
 }
 
-.darkmode--activated .section.membres div.card {
-  background-color: black;
-  color: antiquewhite;
-  border-radius: 2px;
-  border: #a3a3a3 solid 2px;
+.darkmode--activated .section.membres div.carousel-slider li.indicator-item {
+  background-color: darkgray;
 }
 
-.darkmode--activated .section.membres div.card span.niveau {
+.darkmode--activated .section.membres div.carousel-slider li.indicator-item.active {
+  background-color: white;
+}
+
+.darkmode--activated .section.membres div.carousel-item {
+  background-color: black;
+  color: antiquewhite;
+  /* border-radius: 2px; */
+  /* border: #a3a3a3 solid 2px; */
+}
+
+.darkmode--activated .section.membres div.carousel-item span.niveau {
   color: #ce93d8;
 }
 
-.darkmode--activated .section.membres div.card span.bureau {
+.darkmode--activated .section.membres div.carousel-item span.bureau {
   color: #f48fb1;
 }
 
-.darkmode--activated .section.membres div.card span.arbitre {
+.darkmode--activated .section.membres div.carousel-item span.arbitre {
   color: #a5d6a7;
 }
 
@@ -193,10 +214,19 @@ main {
   margin-top: 50px;
 }
 
-.membres .card {
+main.membres {
+  margin: 0;
+}
+
+main.membres h3 {
+  margin-top: 0.3em !important;
+  margin-bottom: 0.8em !important;
+}
+
+/* .membres .card {
   max-width: 600px;
   margin: 0.3em auto;
-}
+} */
 
 .palmares .award {
   font-weight: bold;
